@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia Médico - Resultados</title>
+    <link rel="stylesheet" href="/CSS/pagina-de-consulta.css" />
+  </head>
+  <body>
+
+
+    <div class="container">
+      <h1>Guia Médico</h1>
+      <form class="filter-section">
+        <div class="row">
+          <div class="input-group">
+            <label for="codigo-cartao">Código do cartão Unimed</label>
+            <input
+              type="text"
+              id="codigo-cartao"
+              placeholder="Digite o código"
+            />
+          </div>
+          <div class="dropdown-group">
+            <label for="estado">Estado</label>
+            <select id="estado" required>
+              <option value="">Selecione</option>
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="MG">Minas Gerais</option>
+            </select>
+          </div>
+          <div class="dropdown-group">
+            <label for="cidade">Cidade</label>
+            <select id="cidade" required>
+              <option value="">Selecione</option>
+              <option value="Campinas">Campinas</option>
+              <option value="São Paulo">São Paulo</option>
+              <option value="Rio de Janeiro">Rio de Janeiro</option>
+            </select>
+          </div>
+          <div class="dropdown-group">
+            <label for="especialidade">Especialidade</label>
+            <select id="especialidade" required>
+              <option value="">Selecione</option>
+              <option value="Fisioterapia">Fisioterapia</option>
+              <option value="Cardiologia">Cardiologia</option>
+              <option value="Pediatria">Pediatria</option>
+            </select>
+          </div>
+        </div>
+        <div class="checkbox-group"></div>
+        <button type="button" id="pesquisar">PESQUISAR</button>
+      </form>
+
+      <div id="results" class="results-section" style="display: none">
+        <h2>5 resultado(s) encontrados</h2>
+        <div class="result-card">
+          <div class="prestador">
+            <h3>Danilo Ferreira de Souza</h3>
+            <p><strong>Especialidade:</strong> Fisioterapia</p>
+            <p><strong>Grupo de Serviços:</strong> Fisioterapia</p>
+          </div>
+          <div class="endereco">
+            <p>R PROJETADA, 15</p>
+            <p>CHACARA SANTA LETICIA, CAMPINAS, SP</p>
+            <p>CEP: 13054-057 | <a href="#">Ver no mapa</a></p>
+          </div>
+          <div class="contato">
+            <p><strong>Recurso:</strong> Outros</p>
+            <p><strong>Segmentação de Rede:</strong> Básica</p>
+            <p>
+              <strong>Contato:</strong> <a href="tel:1352220438">1352220438</a>
+            </p>
+          </div>
+        </div>
+        <a href="/HTML/agendamento.html" class="agendamento-link">
+          <button class="agendamento" onclick="abrirAgendamento()">
+          </a>
+            Agendar
+          </button>
+
+        <div class="result-card">
+          <div class="prestador">
+            <h3>Lucas Baccas de Souza Nascimento</h3>
+            <p><strong>Especialidade:</strong> Fisioterapia</p>
+            <p><strong>Grupo de Serviços:</strong> Fisioterapia</p>
+          </div>
+          <div class="endereco">
+            <p>R PROJETADA, 15</p>
+            <p>CHACARA SANTA LETICIA, CAMPINAS, SP</p>
+            <p>CEP: 13054-057 | <a href="#">Ver no mapa</a></p>
+          </div>
+          <div class="contato">
+            <p><strong>Recurso:</strong> Outros</p>
+            <p><strong>Segmentação de Rede:</strong> Básica</p>
+            <p>
+              <strong>Contato:</strong> <a href="tel:1352221862">1352221862</a>
+            </p>
+          </div>
+        </div>
+        <a href="/HTML/agendamento.html" class="agendamento-link">
+          <button class="agendamento" onclick="abrirAgendamento()">
+          </a>
+            Agendar
+          </button>
+
+        <div class="result-card">
+          <div class="prestador">
+            <h3>Dayvid Araujo Ferreira da Silva</h3>
+            <p><strong>Especialidade:</strong> Fisioterapia</p>
+            <p><strong>Grupo de Serviços:</strong> Fisioterapia</p>
+          </div>
+          <div class="endereco">
+            <p>R PROJETADA, 15</p>
+            <p>CHACARA SANTA LETICIA, CAMPINAS, SP</p>
+            <p>CEP: 13054-057 | <a href="#">Ver no mapa</a></p>
+          </div>
+          <div class="contato">
+            <p><strong>Recurso:</strong> Outros</p>
+            <p><strong>Segmentação de Rede:</strong> Básica</p>
+            <p>
+              <strong>Contato:</strong> <a href="tel:1352221597">1352221597</a>
+            </p>
+          </div>
+        </div>
+        <a href="/HTML/agendamento.html" class="agendamento-link">
+          <button class="agendamento" onclick="abrirAgendamento()">
+          </a>
+            Agendar
+          </button>
+
+        <div class="result-card">
+          <div class="prestador">
+            <h3>Eron Matheus Lucindo dos Santos</h3>
+            <p><strong>Especialidade:</strong> Fisioterapia</p>
+            <p><strong>Grupo de Serviços:</strong> Fisioterapia</p>
+          </div>
+          <div class="endereco">
+            <p>R PROJETADA, 15</p>
+            <p>CHACARA SANTA LETICIA, CAMPINAS, SP</p>
+            <p>CEP: 13054-057 | <a href="#">Ver no mapa</a></p>
+          </div>
+          <div class="contato">
+            <p><strong>Recurso:</strong> Outros</p>
+            <p><strong>Segmentação de Rede:</strong> Básica</p>
+            <p>
+              <strong>Contato:</strong> <a href="tel:1352323549">1352323549</a>
+            </p>
+          </div>
+        </div>
+        <a href="/HTML/agendamento.html" class="agendamento-link">
+          <button class="agendamento" onclick="abrirAgendamento()">
+          </a>
+            Agendar
+          </button>
+
+        <div class="result-card">
+          <div class="prestador">
+            <h3>Igor Juan Santana Rocha</h3>
+            <p><strong>Especialidade:</strong> Fisioterapia</p>
+            <p><strong>Grupo de Serviços:</strong> Fisioterapia</p>
+          </div>
+          <div class="endereco">
+            <p>R PROJETADA, 15</p>
+            <p>CHACARA SANTA LETICIA, CAMPINAS, SP</p>
+            <p>CEP: 13054-057 | <a href="#">Ver no mapa</a></p>
+          </div>
+          <div class="contato">
+            <p><strong>Recurso:</strong> Outros</p>
+            <p><strong>Segmentação de Rede:</strong> Básica</p>
+            <p><strong>Contato:</strong> <a href="tel:13523229">13523229</a></p>
+          </div>
+        </div>
+        <a href="/HTML/agendamento.html" class="agendamento-link">
+        <button class="agendamento" onclick="abrirAgendamento()">
+        </a>
+          Agendar
+        </button>
+      </div>
+    </div>
+
+    <script src="/CSS/JS/pagina-de-consulta.js"></script>
+  </body>
+</html>
+
+<!-- Pop-up de agendamento -->
+<div id="popup-agendamento" class="popup-overlay" style="display: none;">
+    <div class="popup-content">
+      <h2>Agendar Consulta</h2>
+      <label for="data">Escolha uma data:</label>
+      <input type="date" id="data" required />
+      <label for="hora">Escolha um horário:</label>
+      <select id="hora" required>
+        <option value="">Selecione</option>
+        <option value="08:00">08:00</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+      </select>
+      <div class="popup-buttons">
+        <button id="confirmar-agendamento">Confirmar</button>
+        <button id="fechar-popup">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Pop-up de sucesso -->
+  <div id="popup-confirmar" class="popup-overlay" style="display: none;">
+    <div class="popup-content">
+      <h2>Consulta Agendada!</h2>
+      <p>Sua consulta foi agendada com sucesso!</p>
+      <button id="fechar-confirmar">Fechar</button>
+    </div>
+  </div>
